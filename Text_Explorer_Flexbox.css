@@ -1,0 +1,67 @@
+body {
+	text-align: center;
+	font-size: 100%;
+}
+
+.flex-container {
+	display: flex;
+	background-color: white;
+	flex-flow: row wrap;
+	/*Sets flex direction to row and that items should wrap in the traditional fasion. 
+	Shorthand for flex-direction and flex-wrap properties.*/
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	width: 70vw;
+	background-color: lightgrey;
+	/*margin: auto;
+  	padding: 10px;
+  	border-radius: 10px;
+  	grid-gap: 10px;
+  	height: 60vh;
+  	box-shadow: 0 0 10px 0 grey;*/
+}
+
+.flex-item {
+	margin: 10px;
+	padding: 10px;
+	border: 2px dotted black;
+	text-align: center;
+}
+
+.colors1 {
+	grid-column: 1 / span 6;
+	grid-row: 1;
+	flex-grow: 1;
+}
+
+.fsize2 {
+	grid-column: 1;
+	grid-row: 2 / span 4;
+	flex-grow: 1;
+}
+
+.input3 {
+	grid-column: 2 / span 4;
+	grid-row: 2 / span 4;
+	flex-grow: 5;
+	flex-basis: 50vw;
+}
+
+.fstyle4 {
+	grid-column: 6;
+	grid-row: 2 / span 4;
+	flex-grow: 1;
+  }
+
+.font5 {
+	grid-column: 1 / span 5;
+	grid-row: 6;
+	flex-grow: 1;
+}
+
+.bg6 {
+	grid-column: 6;
+	grid-row: 6;
+	flex-grow: 1;
+}
