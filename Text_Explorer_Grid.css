@@ -13,6 +13,8 @@ body {
   	height: 60vh;
   	width: 70vw;
   	box-shadow: 0 0 10px 0 grey;
+  	align-items: center;
+  	justify-content: space-around;
 }
 
 .grid-item {
@@ -25,27 +27,146 @@ body {
 	grid-column: 1 / span 6;
 	grid-row: 1;
 }
+		.swatch {
+		width: 2em;
+		height: 2em;
+		margin: .5em;
+	}
+	/*COLORS*/
+		.black {
+			background-color: black;
+			box-shadow: 0 0 0 1px black;
+			border: rgb(216, 216, 216) solid 2px;
+			border-radius: 7px;
+		}
+		.grey {
+			background-color: grey;
+			box-shadow: 0 0 0 1px black;
+			border: rgb(216, 216, 216) solid 2px;
+			border-radius: 7px;
+		}
+		.green {
+			background-color: green;
+			box-shadow: 0 0 0 1px black;
+			border: rgb(216, 216, 216) solid 2px;
+			border-radius: 7px;
+		}
+		.blue {
+			background-color: blue;
+			box-shadow: 0 0 0 1px black;
+			border: rgb(216, 216, 216) solid 2px;
+			border-radius: 7px;
+		}
+		.red {
+			background-color: red;
+			box-shadow: 0 0 0 1px black;
+			border: rgb(216, 216, 216) solid 2px;
+			border-radius: 7px;
+		}
+		.yellow {
+			background-color: yellow;
+			box-shadow: 0 0 0 1px black;
+			border: rgb(216, 216, 216) solid 2px;
+			border-radius: 7px;
+		}
+		.orange {
+			background-color: orange;
+			box-shadow: 0 0 0 1px black;
+			border: rgb(216, 216, 216) solid 2px;
+			border-radius: 7px;
+		}
+		.purple {
+			background-color: purple;
+			box-shadow: 0 0 0 1px black;
+			border: rgb(216, 216, 216) solid 2px;
+			border-radius: 7px;
+		}
 
 .fsize2 {
 	grid-column: 1;
 	grid-row: 2 / span 4;
 }
+		/* The slider itself */
+	.slider {
+	  -webkit-appearance: none;  /* Override default CSS styles */
+	  appearance: none;
+	  width: 80%; /* Full-width */
+	  height: 10px; /* Specified height */
+	  background: #d3d3d3; /* Grey background */
+	  outline: none; /* Remove outline */
+	  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+	  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+	  transition: opacity .2s;
+	  transform: rotateZ(270deg);
+	}
+
+	/* Mouse-over effects */
+	.slider:hover {
+	  opacity: 1; /* Fully shown on mouse-over */
+	}
+
+	/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+	.slider::-webkit-slider-thumb {
+	  -webkit-appearance: none; /* Override default look */
+	  appearance: none;
+	  width: 7px; /* Set a specific slider handle width */
+	  height: 35px; /* Slider handle height */
+	  background: darkgrey; /* Grey background */
+	  cursor: pointer; /* Cursor on hover */
+	  outline: black solid 2px;
+	}
+
+	.slider::-moz-range-thumb {
+	  width: 7px; /* Set a specific slider handle width */
+	  height: 35px; /* Slider handle height */
+	  background: darkgrey; /* Grey background */
+	  cursor: pointer; /* Cursor on hover */
+	  outline: black solid 2px; 
+	}
 
 .input3 {
 	grid-column: 2 / span 4;
 	grid-row: 2 / span 4;
 	text-align: center;
+	color: black;
+	font-size: 36px;
+	font-weight: normal;
 }
 
 .fstyle4 {
 	grid-column: 6;
 	grid-row: 2 / span 4;
+	display: grid;
+	justify-content: center;  
   }
 
-.font5 {
-	grid-column: 1 / span 5;
-	grid-row: 6;
-}
+	button {
+	  	font-size: 1.5em;
+		width: 1.5em;
+		height: 1.5em;
+		border-radius: 5px;
+		margin: 5px;
+	  }
+
+	  .buta {
+	  	grid-column: 1;
+	  }
+
+	    .butb {
+	  	grid-column: 2;
+	  }
+
+	    .butc {
+	  	grid-column: 3;
+	  }
+
+	    .butd {
+	  	grid-column: 4;
+
+	.font5 {
+		grid-column: 1 / span 5;
+		grid-row: 6;
+	}
 
 .bg6 {
 	grid-column: 6;

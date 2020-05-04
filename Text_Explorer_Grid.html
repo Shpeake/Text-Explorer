@@ -6,24 +6,62 @@
 	</head>
 
    	<body>
-   		<h1 class="page-title">Text Explorer</h1>
-   		<div class="grid-container">
+
+         <h1 class="page-title">Text Explorer</h1>
+
+         <!--GRID CONTAINER AND ITEMS-->        
+         <div class="grid-container">
+
    			<div class="grid-item colors1">
-   				Color Swatches
-   			</div>
-   			<div class="grid-item fsize2">
-   				Font Size
+               <input class="swatch black"   type="button"
+                  onclick="document.getElementById('input3').style.color='black'">
+               <input class="swatch grey"    type="button"
+                  onclick="document.getElementById('input3').style.color='grey'">
+               <input class="swatch green"   type="button"
+                  onclick="document.getElementById('input3').style.color='green'">
+               <input class="swatch blue"    type="button" 
+                  onclick="document.getElementById('input3').style.color='blue'">
+               <input class="swatch red"     type="button" 
+                  onclick="document.getElementsByClassName('input3')[0].style.color='red'">
+               <input class="swatch yellow"  type="button"
+                  onclick="document.getElementById('input3').style.color='yellow'">
+               <input class="swatch orange"  type="button"
+                  onclick="document.getElementById('input3').style.color='orange'">
+               <input class="swatch purple"  type="button"
+                  onclick="document.getElementById('input3').style.color='purple'">
+            </div>
+   			
+            <div class="grid-item fsize2">
+               <div class="saySize">24</div>
+                  <input class="slider" type="range" min="12" max="50" value="25" id="myRange">
    			</div>   			
-   			<textarea class="grid-item input3">
-				Placeholder text
-   			</textarea>
-   			<div class="grid-item fstyle4">
-   				Font Style
+            
+            <div class="grid-item input3" id="input3" contenteditable="true">
+               <p>Placeholder text</p>
+            </div>   
+   			
+            <div class="grid-item fstyle4">
+               <button type="submit" class="styleBut buta"
+                  onclick="document.getElementsByClassName('input3')[0].style.fontWeight='bold'">𝗕</button>
+               <button type="submit" class="styleBut butb"
+                  onclick="document.getElementsByClassName('input3')[0].style.fontStyle='italic'">𝐼</button>
+               <button type="submit" class="styleBut butc"
+                  onclick="document.getElementsByClassName('input3')[0].style.textDecoration='underline'">⍶</button>
+               <button type="submit" class="styleBut butd"
+                  onclick="document.getElementsByClassName('input3')[0].style.textDecoration='line-through'">ᵺ</button>
+               <button type="submit" class="styleBut bute"
+                  onclick="document.getElementsByClassName('input3')[0].style.fontWeight='normal'">T</button>
    			</div>   	
-   			<div class="grid-item font5">
-   				Font Dropdown
+   			
+            <div class="grid-item font5">
+               <select>
+                  <option>Font 1</option>
+                  <option>Font 2</option>
+                  <option>Font 3</option>
+               </select>
    			</div>
-   			<div class="grid-item bg6">
+   			
+            <div class="grid-item bg6">
    				BG Shape
    			</div>   	   			   					
 		</div>

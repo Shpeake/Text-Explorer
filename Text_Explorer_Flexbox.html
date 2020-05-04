@@ -1,31 +1,59 @@
 <!DOCTYPE html>
 <html>
 	<head>
-   		<link rel="stylesheet" href="Text_Explorer_Flexbox.css">
+   	<link rel="stylesheet" href="Text_Explorer_Flexbox.css">
+      <script src="Text_Explorer_Flexbox.js"></script>
     	<title>Text Explorer Flex</title>
 	</head>
 
    	<body>
    		<h1 class="page-title">Text Explorer</h1>
-   		<div class="flex-container">
-   			<div class="flex-item colors1">
-   				Color Swatches
+   		
+         <div class="flex-container">
+   			
+            <div class="fsizebuffer"></div>
+            
+            <div class="flex-item fsize1">
+               <div class="saySize">24</div>
+                  <input class="slider" type="range" min="12" max="50" value="25">
+            </div>   
+            
+            <div class="fsizebuffer"></div>
+            
+            <div class="flex-item colors2">
+   				<input class="swatch" id="black" type="button" onclick="blackFunction()">
+               <input class="swatch" id="grey" type="button" onclick="greyFunction()">
+               <input class="swatch" id="green" type="button" onclick="greenFunction()">
+               <input class="swatch" id="blue" type="button" onclick="blueFunction()">
+               <input class="swatch" id="red" type="button" onclick="redFunction()">
+               <input class="swatch" id="yellow" type="button" onclick="yellowFunction()">
+               <input class="swatch" id="orange" type="button" onclick="orangeFunction()">
+               <input class="swatch" id="purple" type="button" onclick="purpleFunction()">
+   			</div>			
+            
+            <input type="text" name="sample-text" class="flex-item" id="input3" placeholder="Placeholder Text">
+            </input>	
+   			
+            <div class="flex-item font4">
+   				<select>
+                  <option>Font 1</option>
+                  <option>Font 2</option>
+                  <option>Font 3</option>
+               </select>
    			</div>
-   			<div class="flex-item fsize2">
-   				Font Size
-   			</div>   			
-   			<textarea class="flex-item input3">
-				Placeholder text
-   			</textarea>
-   			<div class="flex-item fstyle4">
-   				Font Style
-   			</div>   	
-   			<div class="flex-item font5">
-   				Font Dropdown
-   			</div>
-   			<div class="flex-item bg6">
+   			
+            <div class="flex-item bg5">
    				BG Shape
-   			</div>   	   			   					
+   			</div>   
+            
+            <div class="fstylebuffer"></div>
+            <div class="flex-item fstyle6">
+               <button type="submit" onclick="" class="styleBut buta">𝗕</button>
+               <button type="submit" onclick="" class="styleBut butb">𝐼</button>
+               <button type="submit" onclick="" class="styleBut butc">⍶</button>
+               <button type="submit" onclick="" class="styleBut butd">ᵺ</button>
+            </div>  
+            <div class="fstylebuffer"></div>                      	   			   					
 		</div>
    	</body>
 </html>
